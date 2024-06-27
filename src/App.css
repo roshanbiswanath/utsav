@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.navbar {
+  display: flex;
+  height: 8vh;
+  gap:1vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  left: 0;
+  background-color: rgba(0, 0, 0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+.introPano {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.fullscreen-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+.introText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0,0.5);
+}
+
+.navLogo {
+  height: 3em;
+}
+
+.introHeading {
+  font-size: 8rem;
+  display: flex;  
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-weight: 600;
+}
+
+@media (max-width: 768px) { .introHeading { font-size: 4rem; } }
+
+.orange{
+  color: rgb(204, 137, 13);
+}
+
+.about-vr {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: black;
+  border-radius: 10px;
+  color: rgb(204, 137, 13);
+}
+
+.partners-grid{
+  background-color: rgb(204, 137, 13);
+  color: white;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(25px, 1fr));
+  gap: 5px;
+  padding-bottom: 20px;
+}
+.partner-item {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  vertical-align: middle;
+}
+.partner-logo {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .partner-item {
+    width: 50%;
+  }
+
+  .partner-logo {
+    width: 70%;
+  }
+}
