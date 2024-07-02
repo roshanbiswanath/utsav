@@ -8,8 +8,8 @@ const Partners = () => {
     ];
 
     return (
-        <div className="partners-grid flex flex-col pb-8 px-5">
-            <h2 className='md:text-5xl text-3xl font-bold my-8'>Our Patners</h2>
+        <div className="partners-grid flex flex-col py-5 md:py-8 px-5">
+            <h2 className='md:text-5xl text-3xl font-bold mb-3 md:mb-8'>Our Patners</h2>
             <div className="partners-divider">
                 {partners.map((partner, index) => (
                     <div key={index} className="partner-item">

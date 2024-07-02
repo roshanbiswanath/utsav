@@ -24,9 +24,9 @@ export default function RathYatra() {
         transition={{
           duration: 0.6,
         }}
-        className="z-50 flex flex-col justify-center items-center"
+        className="z-50 flex flex-col justify-center items-center gap-y-5"
       >
-        <p className="font-bold text-3xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-9">
+        <p className="font-bold text-4xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
           Featured tour <br /> <span className="text-yellow-500">Ratha Yatra 2024</span>
 
         </p>

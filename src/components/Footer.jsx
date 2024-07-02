@@ -2,13 +2,13 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-5">
+    <footer className="bg-white py-3 md:py-5">
       <nav className="flex flex-col md:flex-row items-center justify-between mx-5">
-        <div className="flex flex-col md:flex-row items-center gap-x-4">
-          <img src="logo-black.png" alt="foot_logo" className="md:h-1/12 h-12 mb-5 md:mb-0" />
-          <div className='mb-5 md:mb-0'>
-            <p className="md:text-left font-bold">Utsav VR</p>
-            <p className="font-mono md:text-left">Copyright © 2024 - All rights reserved</p>
+        <div className="flex flex-row items-center gap-x-4 md:mb-0 mb-2">
+          <img src="logo-black.png" alt="foot_logo" className="md:h-1/12 h-9" />
+          <div className='text-left'>
+            <p className="font-bold">Utsav VR</p>
+            <p className="font-mono text-xs md:text-base">Copyright © 2024 - All rights reserved</p>
           </div>
         </div>
         <div className="flex items-center gap-x-4">
