@@ -13,6 +13,7 @@
   "dependencies": {
     "@nextui-org/react": "^2.3.6",
     "@nextui-org/theme": "^2.2.6",
+    "@react-three/drei": "^9.107.3",
     "@react-three/fiber": "^8.16.8",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.6",
@@ -20,6 +21,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.0",
     "tailwind-merge": "^2.3.0",
+    "three": "^0.166.0",
+    "valtio": "^1.13.2",
     "vercel": "^34.2.8"
   },
   "devDependencies": {
