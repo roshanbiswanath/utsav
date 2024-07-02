@@ -35,6 +35,10 @@ export default function Scene() {
             viewerRef.current.material.map = vidTexture
             vidEle.play()
         }
+
+        let vidEle = document.getElementById('vid' + state.currentVideo)
+        vidEle.muted = state.muted
+
     })
 
     useLayoutEffect(() => {
