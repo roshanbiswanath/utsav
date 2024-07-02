@@ -16,7 +16,7 @@ function App() {
       <RathYatra />
       <Gallery />
       <Partners />
-      <Sponsors />
+      {/* <Sponsors /> */}
     </Layout>
     </>
   );
