@@ -14,6 +14,7 @@ export default function Scene() {
     // vid1.repeat.x = -1
 
     let viewerRef = useRef()
+    let controlRef = useRef()
     const snap = useSnapshot(state)
     let prev = 0
     subscribe(state, () => {
@@ -52,9 +53,15 @@ export default function Scene() {
         vidEle.play()
     }, [])
 
+    useEffect(() => {
+        document.body.style.cursor = 'grab';
+        console.log(controlRef.current.rotateSpeed)
+        controlRef.current.rotateSpeed  = -0.4
+    }, [])
+
     return (
         <>
-            <OrbitControls target={[0, 0, 0]} />
+            <OrbitControls ref={controlRef} target={[0, 0, 0]}  onStart={()=>{ document.body.style.cursor = 'grabbing'}} onEnd={()=>{document.body.style.cursor = 'grab';}}/>
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
             <mesh ref={viewerRef}>
