@@ -25,7 +25,7 @@ function Demo() {
                             </button>
                         </Link>
                         <video className='fullscreen-video' autoPlay loop muted>
-                            <source src='demoIntroVid.mp4' type='video/mp4' />
+                            <source src='https://utsavvrfiles.s3.ap-south-1.amazonaws.com/demoIntroVid.mp4' type='video/mp4' />
                             Your browser does not support the video tag.
                         </video>
                         <div className='introText'>

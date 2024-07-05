@@ -16,7 +16,7 @@ function Intro360() {
     return (
         <div className='introPano'>
             <video className='fullscreen-video' autoPlay loop muted>
-                <source src='introvid.mp4' type='video/mp4' />
+                <source src='https://utsavvrfiles.s3.ap-south-1.amazonaws.com/introvid.mp4' type='video/mp4' />
                 Your browser does not support the video tag.
             </video>
             <div className='introText'>
