@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber"
 import Scene from '../components/Scene'
 import DemoUI from '../components/DemoUI';
 import { state } from '../state/state';
-import { useSnapshot } from 'valtio'
+import { useSnapshot } from 'valtio';
 
 function Demo() {
 
@@ -15,7 +15,7 @@ function Demo() {
     const snap = useSnapshot(state)
 
     return (
-        <>
+        <div className='h-screen'>
             {
                 !started && <>
                     <div className='h-full overflow-hidden relative'>
@@ -86,7 +86,7 @@ function Demo() {
                     </Canvas>
                 </div>
             }
-        </>
+        </div>
     )
 }
 
