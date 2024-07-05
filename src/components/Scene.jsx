@@ -51,6 +51,17 @@ export default function Scene() {
         vidTexture.needsUpdate = true
         viewerRef.current.material.map = vidTexture
         vidEle.play()
+
+        // let ytVid = document.getElementById('ytVid')
+        // console.log(ytVid)
+        // console.log(ytVid.contentWindow.document)
+        // let vidTexture = new THREE.VideoTexture(vidEle)
+        // vidTexture.wrapS = vidTexture.wrapT = THREE.RepeatWrapping
+        // vidTexture.repeat.x = -1
+        // vidTexture.colorSpace = THREE.SRGBColorSpace
+        // vidTexture.needsUpdate = true
+        // viewerRef.current.material.map = vidTexture
+        // vidEle.play()
     }, [])
 
     useEffect(() => {
@@ -70,7 +81,7 @@ export default function Scene() {
                 <meshBasicMaterial
                     side={THREE.DoubleSide}
                     toneMapped={true}
-                    onUpdate={self => self.needsUpdate = true} />
+                    onUpdate={self => self.needsUpdate = true}/>
             </mesh>
         </>
     )

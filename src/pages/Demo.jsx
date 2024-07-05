@@ -51,14 +51,14 @@ function Demo() {
                         videoList.map((video, index) => {
                             return (
                                 <>
-                                    {<video id={"vid"+index} key={index} style={{ display: 'none' }} onEnded={()=>{
-                                        if(snap.currentVideo== 2){
+                                    {<video id={"vid" + index} key={index} style={{ display: 'none' }} crossOrigin='anonymous' onEnded={() => {
+                                        if (snap.currentVideo == 2) {
                                             console.log('ended')
-                                        }else{
+                                        } else {
                                             state.currentVideo++
                                         }
                                     }}>
-                                        <source src={video} type='video/mp4' />
+                                        <source src={"https://utsavvrfiles.s3.ap-south-1.amazonaws.com/"+video} type='video/mp4' />
                                         Your browser does not support the video tag.
                                     </video>
                                     }
@@ -66,6 +66,8 @@ function Demo() {
                             )
                         })
                     }
+
+                    {/* <iframe id={"ytVid"}  style={{ display: 'none' }} width="560" height="315" src="https://www.youtube.com/embed/VEJWE6cpqw0?si=SPQ9nMNCw0Ikwu-e&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe> */}
 
                     {/* <video autoPlay>
                         <source src='vid1.mp4' type='video/mp4' />
