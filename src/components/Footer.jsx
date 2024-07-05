@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-white py-3 md:py-5">
       <nav className="flex flex-col md:flex-row items-center justify-between mx-5">
         <div className="flex flex-row items-center gap-x-4 md:mb-0 mb-2">
-          <img src="logo-black.png" alt="foot_logo" className="md:h-1/12 h-9" />
+          <img src="logo/logo-black.webp" alt="foot_logo" className="md:h-1/12 h-9" />
           <div className='text-left'>
             <p className="font-bold">Utsav VR</p>
             <p className="font-mono text-xs md:text-base">Copyright © 2024 - All rights reserved</p>

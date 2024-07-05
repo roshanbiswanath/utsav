@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 export default function RathYatra() {
   const images = [
-    "rath1.jpg",
-    "rath3.jpg",
-    "rath4.jpg",
-    "rath5.jpg",
+    "rath/rath1.webp",
+    "rath/rath3.webp",
+    "rath/rath4.webp",
+    "rath/rath5.webp",
   ];
   return (
     <ImagesSlider className="h-[40rem]" images={images}>
@@ -35,11 +35,11 @@ export default function RathYatra() {
           During this event, deities Lord Jagannath, Balabhadra, and Subhadra are taken in grand chariots from the Jagannath Temple to the Gundicha Temple.
           This vibrant festival attracts millions of devotees and symbolizes unity and equality.
         </div>
-        <Link to={`glimpse`}>
-          <button className="mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full font-bold text-sm md:text-lg">
-            Try the 360 experience
+        {/* <Link to={`glimpse`}>
+          <button className="px-10 py-3 text-base md:text-xl rounded-full bg-yellow-600 font-bold text-white transform hover:scale-105 hover:bg-yellow-500 transition-colors duration-200">
+            Try the 360° experience now
           </button>
-        </Link>
+        </Link> */}
       </motion.div>
     </ImagesSlider>
   );

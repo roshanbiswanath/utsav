@@ -18,17 +18,17 @@ function Demo() {
         <>
             {
                 !started && <>
-                    <div className='introPano'>
+                    <div className='h-full overflow-hidden relative'>
                         <Link to={`/`}>
                             <button className='absolute top-5 left-5 bg-[rgb(204,137,13)] p-2 rounded-full z-20 w-12 h-12'>
                                 <img className='' src='back.svg' alt='back-button' />
                             </button>
                         </Link>
-                        <video className='fullscreen-video' autoPlay loop muted>
+                        <video className='w-screen h-screen object-cover' autoPlay loop muted>
                             <source src='https://utsavvrfiles.s3.ap-south-1.amazonaws.com/demoIntroVid.mp4' type='video/mp4' />
                             Your browser does not support the video tag.
                         </video>
-                        <div className='introText'>
+                        <div className='absolute top-0 left-0 h-full w-full text-white text-2xl text-center p-8 z-10 flex flex-col justify-center items-center bg-[rgba(0,0,0,0.6)] gap-y-5 md:gap-y-9'>
                             <div className='bg-black py-10 md:py-14 px-5 rounded-3xl m-14'>
                                 <div className='md:mb-12 font-bold text-xl md:text-5xl'>
                                     Start the
@@ -43,7 +43,7 @@ function Demo() {
             }
             {
                 started &&
-                <div className='introPano'>
+                <div className='h-full overflow-hidden relative'>
                     <DemoUI />
 
                     {

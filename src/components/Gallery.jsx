@@ -5,48 +5,48 @@ const cards = [[
     {
         id: 1,
         className: 'md:col-span-2',
-        thumbnail: 'gallery1.jpeg',
+        thumbnail: 'gallery/gallery1.webp',
     },
     {
         id: 2,
         className: 'col-span-1',
-        thumbnail: 'gallery2.jpeg',
+        thumbnail: 'gallery/gallery2.webp',
     },
     {
         id: 3,
 
         className: 'col-span-1',
-        thumbnail: 'gallery3.jpeg',
+        thumbnail: 'gallery/gallery3.webp',
     },
     {
         id: 4,
 
         className: 'md:col-span-2',
-        thumbnail: 'gallery4.jpeg',
+        thumbnail: 'gallery/gallery4.webp',
     },
 ],
 [
     {
         id: 1,
         className: 'md:col-span-2',
-        thumbnail: 'gallery5.jpeg',
+        thumbnail: 'gallery/gallery5.webp',
     },
     {
         id: 2,
         className: 'col-span-1',
-        thumbnail: 'gallery2.jpeg',
+        thumbnail: 'gallery/gallery2.webp',
     },
     {
         id: 3,
 
         className: 'col-span-1',
-        thumbnail: 'gallery3.jpeg',
+        thumbnail: 'gallery/gallery3.webp',
     },
     {
         id: 4,
 
         className: 'md:col-span-2',
-        thumbnail: 'gallery8.jpeg',
+        thumbnail: 'gallery/gallery8.webp',
     },
 ]];
 

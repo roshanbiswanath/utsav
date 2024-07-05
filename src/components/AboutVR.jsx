@@ -4,7 +4,7 @@ import '../App.css';
 
 function AboutVR() {
   return (
-    <div className="about-vr mx-auto my-2 md:my-5">
+    <div className="p-5 max-w-3xl bg-black rounded-lg mx-auto my-2 md:my-5">
       <div className='font-bold text-3xl mb-4'>About UtsavVR</div>
       <div className='text-base md:text-xl text-white'>
         UtsavVR is a divlatform that allows you to explore virtual reality tours from around the world. 

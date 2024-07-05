@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 
 export default function Header() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -17,9 +16,9 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={`navbar ${showNavbar ? "" : "hidden"}`} style={{ transition: "opacity 0.5s" }}>
-      <a className='navLogo' href='/'>
-        <img className='navLogo' src="logoCropped.png" alt="" />
+    <div className={`fixed top-0 left-0 right-0 p-4 z-50 ${showNavbar ? "" : "hidden"}`} style={{ transition: "opacity 1s" }}>
+      <a href='/'>
+        <img className='h-9 md:h-12' src="logo/logoCropped.webp" alt="utsavVR-logo" />
       </a>
     </div>
   );

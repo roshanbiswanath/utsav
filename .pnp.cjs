@@ -45,6 +45,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:18.3.1"],\
+          ["react-element-to-jsx-string", "virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:15.0.0"],\
           ["react-router-dom", "virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:6.24.0"],\
           ["tailwind-merge", "npm:2.3.0"],\
           ["tailwindcss", "npm:3.4.3"],\
@@ -79,6 +80,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@babel/runtime", "npm:7.24.7"],\
           ["regenerator-runtime", "npm:0.14.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@base2/pretty-print-object", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@base2-pretty-print-object-npm-1.0.1-e7e95cfd98-10c0.zip/node_modules/@base2/pretty-print-object/",\
+        "packageDependencies": [\
+          ["@base2/pretty-print-object", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9682,6 +9692,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["is-plain-object", [\
+      ["npm:5.0.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/is-plain-object-npm-5.0.0-285b70faa3-10c0.zip/node_modules/is-plain-object/",\
+        "packageDependencies": [\
+          ["is-plain-object", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["is-promise", [\
       ["npm:2.2.2", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/is-promise-npm-2.2.2-afbf94db67-10c0.zip/node_modules/is-promise/",\
@@ -11359,11 +11378,47 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-element-to-jsx-string", [\
+      ["npm:15.0.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/react-element-to-jsx-string-npm-15.0.0-54fc35db27-10c0.zip/node_modules/react-element-to-jsx-string/",\
+        "packageDependencies": [\
+          ["react-element-to-jsx-string", "npm:15.0.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:15.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-element-to-jsx-string-virtual-030aba5c0e/4/AppData/Local/Yarn/Berry/cache/react-element-to-jsx-string-npm-15.0.0-54fc35db27-10c0.zip/node_modules/react-element-to-jsx-string/",\
+        "packageDependencies": [\
+          ["react-element-to-jsx-string", "virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:15.0.0"],\
+          ["@base2/pretty-print-object", "npm:1.0.1"],\
+          ["@types/react", "npm:18.3.2"],\
+          ["@types/react-dom", "npm:18.3.0"],\
+          ["is-plain-object", "npm:5.0.0"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:18.3.1"],\
+          ["react-is", "npm:18.1.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-is", [\
       ["npm:16.13.1", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/react-is-npm-16.13.1-a9b9382b4f-10c0.zip/node_modules/react-is/",\
         "packageDependencies": [\
           ["react-is", "npm:16.13.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:18.1.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/react-is-npm-18.1.0-6642a99f70-10c0.zip/node_modules/react-is/",\
+        "packageDependencies": [\
+          ["react-is", "npm:18.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12598,6 +12653,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:18.3.1"],\
+          ["react-element-to-jsx-string", "virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:15.0.0"],\
           ["react-router-dom", "virtual:54d7b01df68bc39a6a7c907fd92356d146a2d49f7d1cb9ac3d36b98720f05a3266438fab988bb6383859212bfb75dfd0f3be60e5c9833d3010ee28aef46575cf#npm:6.24.0"],\
           ["tailwind-merge", "npm:2.3.0"],\
           ["tailwindcss", "npm:3.4.3"],\
