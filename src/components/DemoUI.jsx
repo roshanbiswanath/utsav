@@ -14,7 +14,7 @@ function DemoUI() {
             {!snap.muted && <button className='absolute top-5 right-5 bg-[rgb(204,137,13)] p-2 rounded-full z-20 w-12 h-12' onClick={() => { state.muted = true }}>
                 <img className='' src='unmute.svg' />
             </button>}
-            {
+            {/* {
                 snap.currentVideo != 0 && <button className='absolute bottom-5 left-5 bg-[rgb(204,137,13)] p-2 rounded-full z-20 w-12 h-12' onClick={() => { state.currentVideo-- }}>
                     <img className='' src='back.svg' alt='back-button' />
                 </button>
@@ -23,7 +23,7 @@ function DemoUI() {
                 snap.currentVideo != 2 && <button className='absolute bottom-5 right-5 bg-[rgb(204,137,13)] p-2 rounded-full z-20 w-12 h-12' onClick={() => { state.currentVideo++ }}>
                     <img className='' src='next.svg' alt='back-button' />
                 </button>
-            }
+            } */}
         </div>
     )
 }

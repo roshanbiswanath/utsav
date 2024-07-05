@@ -1,9 +1,11 @@
 import React, { useRef, useState, useEffect, useLayoutEffect } from 'react'
-import { OrbitControls, useVideoTexture } from "@react-three/drei"
+import { OrbitControls, useVideoTexture, Html } from "@react-three/drei"
 import * as THREE from "three"
 import { state } from '../state/state'
 import { useSnapshot, subscribe } from 'valtio'
-
+import VideoAdBoard from './VideoAdBoard'
+import SponsorBoard from './SponsorBoard'
+import EndBoard from './EndBoard'
 export default function Scene() {
 
 
@@ -17,14 +19,21 @@ export default function Scene() {
     let controlRef = useRef()
     const snap = useSnapshot(state)
     let prev = 0
+
+    function changeClip() {
+
+    }
+
     subscribe(state, () => {
+
         console.log("Changed")
         console.log(state.currentVideo)
         console.log(prev)
-        if(state.currentVideo != prev){
+
+        if (state.currentVideo != prev) {
             let prevVidEle = document.getElementById('vid' + prev)
             prevVidEle.pause()
-            prevVidEle.currentTime = 0 
+            prevVidEle.currentTime = 0
             prev = state.currentVideo
             let vidEle = document.getElementById('vid' + state.currentVideo)
             console.log(vidEle)
@@ -34,11 +43,14 @@ export default function Scene() {
             vidTexture.colorSpace = THREE.SRGBColorSpace
             vidTexture.needsUpdate = true
             viewerRef.current.material.map = vidTexture
-            vidEle.play()
+
         }
 
         let vidEle = document.getElementById('vid' + state.currentVideo)
         vidEle.muted = state.muted
+
+
+
 
     })
 
@@ -67,12 +79,12 @@ export default function Scene() {
     useEffect(() => {
         document.body.style.cursor = 'grab';
         console.log(controlRef.current.rotateSpeed)
-        controlRef.current.rotateSpeed  = -0.4
+        controlRef.current.rotateSpeed = -0.4
     }, [])
 
     return (
         <>
-            <OrbitControls ref={controlRef} target={[0, 0, 0]}  onStart={()=>{ document.body.style.cursor = 'grabbing'}} onEnd={()=>{document.body.style.cursor = 'grab';}}/>
+            <OrbitControls ref={controlRef} target={[0, 0, 0]} onStart={() => { document.body.style.cursor = 'grabbing' }} onEnd={() => { document.body.style.cursor = 'grab'; }} />
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
             <mesh ref={viewerRef}>
@@ -81,8 +93,18 @@ export default function Scene() {
                 <meshBasicMaterial
                     side={THREE.DoubleSide}
                     toneMapped={true}
-                    onUpdate={self => self.needsUpdate = true}/>
+                    onUpdate={self => self.needsUpdate = true} />
             </mesh>
+
+            <Html center>
+
+                {(snap.showingBoard && snap.currentBoard == "sponsor") && <SponsorBoard />}
+                {(snap.showingBoard && snap.currentBoard == "video") && <VideoAdBoard />}
+                {(snap.showingBoard && snap.currentBoard == "end") && <EndBoard />}
+
+
+
+            </Html>
         </>
     )
 }

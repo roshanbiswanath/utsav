@@ -11,8 +11,8 @@ function Demo() {
     const [started, setStarted] = useState(false)
 
     const videoList = ['vid1.mp4', 'vid2.mp4', 'vid3.mp4']
-
     const snap = useSnapshot(state)
+    console.log(snap.currentVideo)
 
     return (
         <div className='h-screen'>
@@ -52,13 +52,25 @@ function Demo() {
                             return (
                                 <>
                                     {<video id={"vid" + index} key={index} style={{ display: 'none' }} crossOrigin='anonymous' onEnded={() => {
+                                        // if (snap.currentVideo == 2) {
+                                        //     console.log('ended')
+                                        // } else {
+                                        //     state.currentVideo++
+                                        // }
+                                        let prevVidEle = document.getElementById('vid' + snap.currentVideo)
+                                        prevVidEle.pause()
+                                        prevVidEle.currentTime = 0
+                                        console.log('ended',prevVidEle)
                                         if (snap.currentVideo == 2) {
-                                            console.log('ended')
-                                        } else {
-                                            state.currentVideo++
+                                            state.currentBoard = 'end'
                                         }
+                                        else{
+                                            state.currentBoard = 'sponsor'
+                                        }
+                                        state.showingBoard = true
+
                                     }}>
-                                        <source src={"https://utsavvrfiles.s3.ap-south-1.amazonaws.com/"+video} type='video/mp4' />
+                                        <source src={"https://utsavvrfiles.s3.ap-south-1.amazonaws.com/" + video} type='video/mp4' />
                                         Your browser does not support the video tag.
                                     </video>
                                     }

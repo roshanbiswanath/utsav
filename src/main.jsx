@@ -8,6 +8,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Demo from './pages/Demo.jsx';
+import SponsorBoard from './components/SponsorBoard.jsx';
+import VideoAdBoard from './components/VideoAdBoard.jsx';
+
 
 const router = createBrowserRouter([
   {
