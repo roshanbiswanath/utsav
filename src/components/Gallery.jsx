@@ -29,7 +29,7 @@ const cards = [[
     {
         id: 1,
         className: 'md:col-span-2',
-        thumbnail: 'gallery/gallery5.webp',
+        thumbnail: 'gallery/gallery6.webp',
     },
     {
         id: 2,
