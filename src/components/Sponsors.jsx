@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 export default function Sponsors() {
   return (
     <div className="flex flex-col antialiased bg-black items-center justify-center relative overflow-hidden">
-        <div className="text-[rgb(204,137,13)] text-3xl md:text-5xl font-bold mt-8 mb-16 text-white">Our Sponsors</div>
+        <div className="text-[#fdc500] text-3xl md:text-5xl font-bold mt-8 mb-16 text-white">Our Sponsors</div>
       <InfiniteMovingCards
         items={data}
         direction="right"

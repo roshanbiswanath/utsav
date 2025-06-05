@@ -12,11 +12,11 @@ function App() {
     <>
     <Layout>
       <Intro360 />
-      <AboutVR  />
+      {/* <AboutVR  />
       <RathYatra />
       <Gallery />
       <Partners />
-      {/* <Sponsors /> */}
+      <Sponsors /> */}
     </Layout>
     </>
   );
